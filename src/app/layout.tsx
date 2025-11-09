@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import SplashScreen from "../components/SplashScreen";
+import DynamicSplashScreen from "../components/DynamicSplashScreen";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body className="font-sans bg-light text-dark">
-        <SplashScreen />
+        <DynamicSplashScreen />
         <Navbar />
         <main>{children}</main>
         <Footer />
