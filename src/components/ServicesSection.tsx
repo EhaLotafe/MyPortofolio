@@ -1,5 +1,5 @@
 'use client'
-import { Player } from 'lottie-react'
+import { Player } from '@lottiefiles/react-lottie-player'
 import MotionWrapper from './MotionWrapper'
 
 type Props = { detailed?: boolean }

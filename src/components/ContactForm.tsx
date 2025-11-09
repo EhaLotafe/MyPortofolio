@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Player } from 'lottie-react'
+import { Player } from '@lottiefiles/react-lottie-player'
 import MotionWrapper from './MotionWrapper'
 
 export default function ContactForm() {

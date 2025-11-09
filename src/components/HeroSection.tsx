@@ -1,6 +1,7 @@
+// src/components/HeroSection.tsx
 'use client'
 import Image from 'next/image'
-import { Player } from 'lottie-react'
+import { Player } from '@lottiefiles/react-lottie-player'
 import MotionWrapper from './MotionWrapper'
 
 export default function HeroSection() {
