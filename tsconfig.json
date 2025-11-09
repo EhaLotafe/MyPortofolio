@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Langage & environnement */
+    "target": "es2016",                        
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+
+    /* Modules */
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+
+    /* Dépréciation TS6+ */
+    "ignoreDeprecations": "6.0",
+
+    /* Plugins */
+    "plugins": [
+      { "name": "next" }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/global.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
