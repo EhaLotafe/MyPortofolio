@@ -1,11 +1,14 @@
+/* src/styles/globals.css */
+
+/* Fonts - doit être avant les directives Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Work+Sans:wght@400;600;700&display=swap');
-
-/* Colors */
+/* Couleurs principales */
 :root {
   --navy: #003B5C;       /* bleu très foncé */
   --blue: #007EA7;       /* bleu clair */
@@ -16,21 +19,21 @@
   --gold: #DAA520;       /* doré */
 }
 
-/* Font sizes */
+/* Tailles de texte */
 :root {
-  --text-xs: 0.75rem;    /* 12px */
-  --text-sm: 0.875rem;   /* 14px */
-  --text-base: 1rem;     /* 16px */
-  --text-lg: 1.125rem;   /* 18px */
-  --text-xl: 1.25rem;    /* 20px */
-  --text-2xl: 1.5rem;    /* 24px */
-  --text-3xl: 1.875rem;  /* 30px */
-  --text-4xl: 2.25rem;   /* 36px */
-  --text-5xl: 3rem;      /* 48px */
-  --text-6xl: 3.75rem;   /* 60px */
+  --text-xs: 0.75rem;    
+  --text-sm: 0.875rem;   
+  --text-base: 1rem;     
+  --text-lg: 1.125rem;   
+  --text-xl: 1.25rem;    
+  --text-2xl: 1.5rem;    
+  --text-3xl: 1.875rem;  
+  --text-4xl: 2.25rem;   
+  --text-5xl: 3rem;      
+  --text-6xl: 3.75rem;   
 }
 
-/* Layout */
+/* Layout global */
 html, body, #__next {
   height: 100%;
 }
@@ -43,7 +46,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container */
+/* Container général */
 .container-max {
   max-width: 1100px;
   margin-left: auto;
@@ -52,13 +55,13 @@ body {
   padding-right: 1rem;
 }
 
-/* Accessible focus */
+/* Focus accessible */
 :focus {
   outline: 3px solid rgba(34,139,34,0.2);
   outline-offset: 3px;
 }
 
-/* Headings standard */
+/* Titres standardisés */
 h1 { font-size: var(--text-5xl); font-weight: 700; }
 h2 { font-size: var(--text-4xl); font-weight: 700; }
 h3 { font-size: var(--text-3xl); font-weight: 600; }
@@ -66,10 +69,10 @@ h4 { font-size: var(--text-2xl); font-weight: 600; }
 h5 { font-size: var(--text-xl); font-weight: 600; }
 h6 { font-size: var(--text-lg); font-weight: 600; }
 
-/* Paragraphs */
+/* Paragraphes */
 p { font-size: var(--text-base); line-height: 1.6; }
 
-/* Links */
+/* Liens */
 a {
   color: var(--blue);
   text-decoration: none;
@@ -79,7 +82,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
+/* Boutons */
 button, .btn {
   font-family: inherit;
   font-weight: 600;
@@ -104,8 +107,82 @@ button, .btn {
   color: white;
 }
 
-/* Utilities supplémentaires si besoin */
+/* Utilities globales */
 .bg-navy { background-color: var(--navy); }
 .text-navy { color: var(--navy); }
 .bg-light { background-color: var(--light); }
 .text-dark { color: var(--dark); }
+
+/* =======================
+   Styles spécifiques sections
+   ======================= */
+
+/* HeroSection */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+.hero-section h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.hero-section p {
+  color: var(--dark);
+}
+.hero-section .btn {
+  margin-top: 1rem;
+}
+
+/* AboutSection */
+.about-section h2 {
+  margin-bottom: 1rem;
+}
+.about-section p {
+  margin-bottom: 0.75rem;
+}
+.about-section .card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.about-section hr {
+  border-color: var(--light);
+}
+
+/* ProjectsGrid / ProjectsSection */
+.projects-grid article {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projects-grid article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.projects-grid h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+.projects-grid p {
+  font-size: var(--text-sm);
+  color: #4B5563; /* gray-700 */
+}
+
+/* ServicesSection */
+.services-section ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-section ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.services-section h2 {
+  margin-bottom: 1rem;
+}
+.services-section p {
+  margin-bottom: 1.5rem;
+}
+.services-section .lottie-container {
+  background: white;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}

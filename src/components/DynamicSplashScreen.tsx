@@ -1,8 +1,9 @@
-// src/components/DynamicSplashScreen.tsx
+// src/components/DynamicSplashScreen.tsx (CORRIGÉ)
+'use client' // <-- AJOUTÉ : Marque le fichier comme un Client Component
 import dynamic from "next/dynamic";
 
 const SplashScreen = dynamic(() => import("./SplashScreen"), {
-  ssr: false, // ⚠️ important pour éviter document is not defined
+  ssr: false, // Maintenant autorisé
 });
 
 export default SplashScreen;

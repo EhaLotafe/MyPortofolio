@@ -5,6 +5,10 @@ declare module "@lottiefiles/react-lottie-player";
 declare module '*.css';
 declare module '*.scss';
 declare module '*.sass';
+// src/globals.d.ts
+declare module '*.css'
+declare module '*.scss'
+
 // src/global.d.ts
 import "framer-motion";
 

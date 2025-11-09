@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="bg-white/90 backdrop-blur sticky top-0 z-50 border-b">
       <div className="container-max flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="Overcome logo" width={42} height={42} />
+          <Image src="/logo.jpg" alt="Overcome logo" width={42} height={42} />
           <span className="font-title text-lg">Overcome Solution</span>
         </Link>
 
