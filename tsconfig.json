@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     /* Langage & environnement */
-    "target": "es2016",
+    "target": "ES2020",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -17,9 +17,9 @@
     "incremental": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
-    /* Modules */
-    "module": "commonjs",
-    "moduleResolution": "node",
+    /* Modules (fix ici 👇) */
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     /* Dépréciation TS6+ */
     "ignoreDeprecations": "6.0",
@@ -35,8 +35,7 @@
     "src/global.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'AgriConnect – Plateforme agro-commerce',
     stack: ['React','Node.js','MongoDB','USSD/SMS'],
     description: 'Solution digitale permettant de connecter agriculteurs ruraux et acheteurs urbains via un modèle hybride (Web + USSD/SMS). Rôles multi-accès, gestion des offres agricoles, commandes, système de confiance et orientation vers un modèle marketplace évolutif.',
-    image: '/projects/agric-connect.png',
+    image: '/projects/agric-connect.jpeg',
     kpis: ['Auth multi-rôle', 'UI low-connectivity', 'Marketplace évolutive']
   },
   {
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: 'EduPay – Paiement scolaire digitalisé (Prototype/Concept)',
     stack: ['Express','TypeScript','PostgreSQL','Web'],
     description: 'Automatisation du suivi des frais scolaires : inscription, paiements, relances, état des élèves et reporting pour comptables/administration scolaire. Réduction des erreurs humaines et gain d’efficacité administrative.',
-    image: '/projects/edupay.png',
+    image: '/projects/edupay.jpeg',
     kpis: ['Réduction erreurs', 'Reporting temps réel', 'Traçabilité']
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: 'L’Art du Plaisir – Produit digital et programme privé',
     stack: ['Web','PDF','Programme digital'],
     description: 'Produit premium incluant un livre numérique, un programme d’accompagnement et un canal privé. Focus sur développement personnel masculin, confiance, discipline et performance.',
-    image: '/projects/art-du-plaisir.png',
+    image: '/projects/art-du-plaisir.jpeg',
     kpis: ['Produit premium', 'Programme digital', 'Canal privé']
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     title: 'Portfolio IA & Branding',
     stack: ['AI','Design','Branding'],
     description: 'Catalogue IA regroupant prompts avancés, identités visuelles et créations AI-assisted destinées aux créateurs, entrepreneurs et marques.',
-    image: '/projects/portfolio-ia.png',
+    image: '/projects/portfolio-ia.jpeg',
     kpis: ['Prompts avancés', 'Identités visuelles', 'AI-assisted']
   },
   {
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: 'Chatbots personnalisés pour entreprises (Cozo DB)',
     stack: ['Chatbot','Node.js','IA'],
     description: 'Automatisation de réponses métier avec knowledge base structurée et intégration aux processus internes.',
-    image: '/projects/chatbots-cozo.png',
+    image: '/projects/chatbots-cozo.jpeg',
     kpis: ['Automatisation métier', 'Knowledge base', 'IA intégrée']
   },
   {
